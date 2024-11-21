@@ -490,6 +490,7 @@ MonoBehaviour:
           m_CustomPostProcessTypesAsString:
           - MarcoBlockOverride, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
             PublicKeyToken=null
+          - DataMoshing, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     - rid: 8580814606897774598
       type: {class: RenderGraphSettings, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
       data:

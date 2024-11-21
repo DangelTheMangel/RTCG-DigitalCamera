@@ -313,6 +313,22 @@ MonoBehaviour:
   m_RayMaxIterationsRT:
     m_OverrideState: 1
     m_Value: 48
+--- !u!114 &-7290716799800327856
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ac7e4e8c556424a9f2f23e16a9a28e, type: 3}
+  m_Name: DataMoshing
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-7093316152859314165
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -468,6 +484,12 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0
+  pixelationAmount:
+    m_OverrideState: 1
+    m_Value: 128
+  marcoBlock:
+    m_OverrideState: 1
+    m_Value: 128
 --- !u!114 &-3489539668235506390
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -988,6 +1010,7 @@ MonoBehaviour:
   - {fileID: 7646151913829570906}
   - {fileID: -3960574654627109433}
   - {fileID: -3946970216179676501}
+  - {fileID: -7290716799800327856}
 --- !u!114 &448115243408767295
 MonoBehaviour:
   m_ObjectHideFlags: 3
