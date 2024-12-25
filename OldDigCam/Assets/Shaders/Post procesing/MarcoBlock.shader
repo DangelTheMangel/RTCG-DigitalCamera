@@ -40,36 +40,15 @@ Shader "Hidden/Shader/MarcoBlock"
         return output;
     }
 
-    // List of properties to control your post process effect
-    float _Intensity;
     float pixelationAmount;
-    float marcoBlock;
-    float hash1 = 12.9898;
-    float hash2 = 78.233;
-    float hash3 =43758.5453;
     TEXTURE2D_X(_MainTex);
 
     float4 CustomPostProcess(Varyings input) : SV_Target
     {
-        UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
-
-        // Correct UV for aspect ratio to ensure square pixels
         float2 aspectCorrectedUV = input.texcoord.xy;
         aspectCorrectedUV.x *= _ScreenParams.y / _ScreenParams.x;
-
-        // Compute block UV with aspect correction
         float2 blockUV = floor(aspectCorrectedUV * pixelationAmount) / pixelationAmount;
-
-        // Reverse aspect correction for texture sampling
-        blockUV.x /= (_ScreenParams.y / _ScreenParams.x);
-        float hashValue = frac(sin(dot(floor(blockUV * marcoBlock), float2(hash1, hash2))) * hash3);
-        // Introduce random offset for blocky artifacts
-        float2 randomOffset = hashValue * (1.0 / marcoBlock);
-        blockUV += randomOffset;
-
-        // Sample the texture with the modified UV
         float3 sourceColor = SAMPLE_TEXTURE2D_X(_MainTex, s_linear_clamp_sampler, ClampAndScaleUVForBilinearPostProcessTexture(blockUV)).xyz;
-
         return float4(sourceColor, 1);
     }
 

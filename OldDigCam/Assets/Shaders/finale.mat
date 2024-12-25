@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DatamosInjector 1
+  m_Name: finale
   m_Shader: {fileID: -6465566751694194690, guid: dff311c58a122064da0f38e5488e1a1a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -52,20 +52,20 @@ Material:
     - _DecayFactor: 0.98
     - _Intencity: 1
     - _Intensity: 1
-    - _MaxSmearDistance: 0.2
-    - _NoiseIntesyty: 956.35
-    - _NoiseScale: 10000
+    - _MaxSmearDistance: 0.01
+    - _NoiseIntesyty: 500
+    - _NoiseScale: 500
     - _SmearBlend: 0.5
-    - _TimeSpeed: 13.01
+    - _TimeSpeed: 2
     - _min_Intencity: 123.78
     - _orginaleDataMos_SmearBlend: 1
     - _quantization: 128
-    - _quantization_Uv: 256
+    - _quantization_Uv: 124
     - _quantization_color: 64
     - _testFloat: 0.502
     m_Colors:
     - _TestOffset: {r: 0, g: 0, b: 0, a: 0}
     - _motionVectorMulti: {r: 1, g: 1, b: 0, a: 0}
-    - _streaking_direaction: {r: 1, g: 2, b: 0, a: 0}
+    - _streaking_direaction: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
