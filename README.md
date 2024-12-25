@@ -1,4 +1,4 @@
-# Shader Project
+# Compression Artifacts and Glitches
 
 ## Requirements
 - Unity Version: **6000.0.26f1**
